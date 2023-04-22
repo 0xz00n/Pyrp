@@ -1,7 +1,7 @@
 import socket
 from time import sleep
 
-host = "192.168.10.233"
+host = "0.0.0.0"
 port = 1433
 
 with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
