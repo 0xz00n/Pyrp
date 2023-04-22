@@ -2,8 +2,8 @@ import random
 import socket
 from time import sleep
 
-host = "target.host.local"
-#host = "192.168.10.233"
+#host = "target.host.local"
+host = "127.0.0.1"
 port = 1433
 count = 1
 
