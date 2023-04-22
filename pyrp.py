@@ -6,16 +6,9 @@ tarip = "192.168.10.233"
 tarport = 1433
 linterface = "127.0.0.1"
 
-def get_ifaces():
-    print(socket.if_nameindex())
-
 def receiver(socket):
     message = socket.recv(mbuff)
     return message
-
-def listener(socket):
-    conn,addr = socket.accept()
-    return conn
 
 def replacer(message):
     seek = b"""Vulnerable Packet"""
