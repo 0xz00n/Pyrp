@@ -27,7 +27,7 @@ We're going to pretend that democlient.py is the thick app you're testing here a
 You should have noticed that both the client and server show "HACKED!" after 5 packets and exited.
 
 ### What happened?
-The whole point of this script is to easily modify TCP payloads on the fly.  If you look at the `replacer()` function, its whole purpose is to search for something within a TCP payload and, if it finds that something, send a modified version of it instead.  You, the user, would be changing the `replacer()` function to fit the needs to of the protocol.  By default, `replacer()` is only looking at packets sent from the application.  If you need it to inspect packets from the upstream server, you'll want to move where it currently sits within the `handler()` function.
+The whole point of this script is to easily modify TCP payloads on the fly.  If you look at the `replacer()` function, its whole purpose is to search for something within a TCP payload and, if it finds that something, send a modified version of it instead.  You, the user, would be changing the `replacer()` function to fit the needs of the protocol.  By default, `replacer()` is only looking at packets sent from the application.  If you need it to inspect packets from the upstream server, you'll want to move where it currently sits within the `handler()` function.
 
 ### Assumptions
 I'm assuming that you can work with/understand python and sockets. Also, this is meant to work in tandem with Wireshark/tcpdump analysis since pyrp.py doesn't have any output.
