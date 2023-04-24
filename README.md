@@ -1,5 +1,5 @@
 # Pyrp
-Kind of like Burp for TCP protocols. But worse.
+Kind of like a dependency-less Burp for TCP protocols. But worse.
 
 This is really just a script that makes thick app network analysis/modification easy in restrictive environments.  It should work as long as python 3 is installed on the machine.
 
